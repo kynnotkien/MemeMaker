@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+    .main-container {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .main-container > div > input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .generate-button,
+    .download-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .header > h1 {
+        font-size: 1.5rem;
+    }
+
+    .header > a {
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+}

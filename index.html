@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Meme Maker</h1>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+    </header>
+    <div class="main-container">
+        <div class="upload-container">
+            <label>Upload an image</label>
+            <input class="image-input" type="file" id="image-input" accept="image/*">
+        </div>
+        <div class="top-text">
+            <label>Top Text</label>
+            <input type="text" id="top-text">
+        </div>
+        <div class="bottom-text">
+            <label>Bottom Text</label>
+            <input type="text" id="bottom-text">
+        </div>
+        <button class="generate-button" id="generate-button">Generate</button>
+        <canvas class="meme" id="meme"></canvas>
+        <button class="download-button" id="download-button">Download</button>
+    </div>
+
+
+    <script src="main.js" defer></script>
+</body>
+</html>

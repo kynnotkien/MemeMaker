@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.header > a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header > a:hover {
+    text-decoration: underline;
+}
+
+.header > h1 {
+    color: #fff;
+    margin-right: auto;
+}
+
+.main-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.main-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-container > div > label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main-container > div > input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 1.2em;
+}
+
+.image-input {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #666;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    color: transparent;
+}
+
+.image-input::file-selector-button {
+    display: none;
+}
+
+.image-input::before {
+    content: 'Drag and drop your image here\A or click to browse';
+    white-space: pre;
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.image-input::-webkit-file-upload-button {
+    display: none;
+}
+
+.image-input:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.image-input:hover {
+    border-color: #333;
+    background-color: #f0f0f0;
+}
+
+.image-input:active {
+    background-color: #e8e8e8;
+}
+
+.main-container > button {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 1em;
+}
+
+.main-container > button:hover {
+    background-color: #ccc;
+    transition: 0.3s;
+}
+
