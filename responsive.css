@@ -8,7 +8,7 @@
 
     .main-container > div > input,
     .main-container > button {
-        width: 100%;
+        width: 300px;
         box-sizing: border-box;
     }
 
